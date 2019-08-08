@@ -6,4 +6,5 @@ set -e
 ls
 service mysql start
 mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'localhost' IDENTIFIED BY 'dbuserpassword'"
+dotnet build
 dotnet run --project AddressBook.WebApi
