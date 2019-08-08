@@ -10,4 +10,4 @@ Note:
 Test can be executed without database
 
 Docker Image:
-https://cloud.docker.com/repository/docker/dhayanidhijr/addressbookdocker
+https://hub.docker.com/r/dhayanidhijr/addressbookdocker
