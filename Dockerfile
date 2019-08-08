@@ -13,4 +13,4 @@ WORKDIR /app
 
 COPY ./ .
 
-ENTRYPOINT ["/sbin/entrypoint.sh"]
+CMD ["/sbin/entrypoint.sh"]
