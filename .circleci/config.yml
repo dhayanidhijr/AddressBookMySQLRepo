@@ -13,7 +13,7 @@ jobs:
             docker build -t dockerapp:v1.0 .
             docker run dockerapp:v1.0 dotnet build
       - deploy:
-          name: Push application Docker image
+          name: Push application AddressBook Docker image
           command: |
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
             docker tag dockerapp_dockerapp $DOCKER_HUB_USER_ID/addressbookdocker:$CIRCLE_SHA1
