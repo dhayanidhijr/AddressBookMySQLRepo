@@ -11,3 +11,7 @@ Test can be executed without database
 
 Docker Image:
 https://hub.docker.com/r/dhayanidhijr/addressbookdocker
+
+Git lab version:
+https://gitlab.com/dhayanidhijr/addressbook
+
