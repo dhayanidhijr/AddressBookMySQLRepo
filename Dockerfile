@@ -9,6 +9,10 @@ COPY entrypoint.sh /sbin/entrypoint.sh
 
 RUN chmod 755 /sbin/entrypoint.sh
 
+COPY buildandtest.sh /sbin/buildandtest.sh
+
+RUN chmod 755 /sbin/buildandtest.sh
+
 WORKDIR /app
 
 COPY ./ .

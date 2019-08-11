@@ -11,7 +11,7 @@ jobs:
           name: Run tests
           command: |
             docker build -t dockerapp:cibuild .
-            docker run dockerapp:cibuild dotnet build && dotnet test
+            docker run dockerapp:cibuild buildandtest.sh
       - deploy:
           name: Push application AddressBook Docker image
           command: |
