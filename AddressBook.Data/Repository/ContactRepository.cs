@@ -16,7 +16,7 @@ namespace AddressBookDataLib.Repository
         public ILogger Logger { get; set; }
         public IDatabaseSetting Settings { get; set; }
 
-        public ContactRepository(ILogger<AddressRepository> logger, IDatabaseSetting settings, IDBContext<AddressBook> dbContext)
+        public ContactRepository(ILogger<ContactRepository> logger, IDatabaseSetting settings, IDBContext<AddressBook> dbContext)
         {
             this.Logger = logger;
             this.Settings = settings;

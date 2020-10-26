@@ -32,6 +32,7 @@ namespace AddressBookDataLib.Context
             base.OnModelCreating(modelBuilder);
         }
 
+        public virtual DbSet<DreeItem> DreeItems { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Address> AddressList { get; set; }
         public virtual DbSet<ContactType> ContactTypes { get; set; }

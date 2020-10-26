@@ -101,6 +101,51 @@
             </summary>
             <param name="id">Record Id of existing contact record which is required to be deleted</param>
         </member>
+        <member name="T:AddressBook.WebApi.Controllers.DreeItemController">
+            <summary>
+            Contact Controller
+            </summary>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.#ctor(AddressBookBusinessLib.Interface.IDreeItemRepository)">
+            <summary>
+            DreeItem Controller
+            </summary>
+            <param name="dreeItemRepository">DreeItem Repository Interface</param>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.Get">
+            <summary>
+            Get All Active Contact Records
+            </summary>
+            <returns>Array of Contact Objects</returns>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.Get(System.Int32)">
+            <summary>
+            Get Contact Record for provided record id
+            </summary>
+            <param name="id">Record of the contact record which has to be reterived</param>
+            <returns>Contact record object for the provided id</returns>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.Post(AddressBookBusinessLib.Model.DreeItem)">
+            <summary>
+            Use to save any new Contact entry
+            </summary>
+            <param name="contact">Contact object provided to be created as new entry</param>
+            <returns>Status OK when successfully created and Not Found when the creation failed</returns>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.Put(System.Int32,AddressBookBusinessLib.Model.DreeItem)">
+            <summary>
+            Use to update any existing Contact record
+            </summary>
+            <param name="id">Record of existing contact record</param>
+            <param name="contact">Contact changes encapsulated as contact object which has to be updated</param>
+            <returns>Status OK when the update is successful and Not Found when the operation is failed</returns>
+        </member>
+        <member name="M:AddressBook.WebApi.Controllers.DreeItemController.Delete(System.Int32)">
+            <summary>
+            Use to delete any existing Contact Record
+            </summary>
+            <param name="id">Record Id of existing contact record which is required to be deleted</param>
+        </member>
         <member name="T:AddressBook.WebApi.Startup">
             <summary>
             

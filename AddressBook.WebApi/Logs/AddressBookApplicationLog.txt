@@ -112,3 +112,209 @@
 [2019-08-07 03:25:56,575] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [17] [DESKTOP-0DRH2CB] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Address, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
 [2019-08-07 03:25:56,584] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [17] [DESKTOP-0DRH2CB] [(null)] Executed action AddressBook.WebApi.Controllers.AddressController.Get (AddressBookWebApi) in 14.8555ms  
 [2019-08-07 03:25:56,591] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [DESKTOP-0DRH2CB] [(null)] Request finished in 26.2202ms 200 application/json; charset=utf-8  
+[2020-10-26 15:29:25,032] [DEBUG] [HttpsConnectionAdapter] [8] [HQNJ-DJAYARAMAN] [(null)] Failed to authenticate HTTPS connection. System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslState.ThrowIfExceptional()
+   at System.Net.Security.SslState.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslState.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+ 
+[2020-10-26 15:29:25,032] [DEBUG] [HttpsConnectionAdapter] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to authenticate HTTPS connection. System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslState.ThrowIfExceptional()
+   at System.Net.Security.SslState.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslState.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+ 
+[2020-10-26 15:29:25,905] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/    
+[2020-10-26 15:29:26,185] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 281.1142ms 404   
+[2020-10-26 15:29:30,849] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html    
+[2020-10-26 15:29:30,958] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 108.8955ms 200 text/html  
+[2020-10-26 15:29:30,979] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css    
+[2020-10-26 15:29:30,984] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js    
+[2020-10-26 15:29:30,989] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js    
+[2020-10-26 15:29:31,021] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'  
+[2020-10-26 15:29:31,024] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 45.2608ms 200 text/css  
+[2020-10-26 15:29:31,032] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [14] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'  
+[2020-10-26 15:29:31,034] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 45.9513ms 200 application/javascript  
+[2020-10-26 15:29:31,059] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [8] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'  
+[2020-10-26 15:29:31,065] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 81.8735ms 200 application/javascript  
+[2020-10-26 15:29:33,229] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:29:33,400] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 170.4977ms 200 application/json;charset=utf-8  
+[2020-10-26 15:29:43,557] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/api/Address    
+[2020-10-26 15:29:43,601] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "Address"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.Address]] Get() on controller AddressBook.WebApi.Controllers.AddressController (AddressBookWebApi).  
+[2020-10-26 15:29:43,612] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.AddressController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 15:29:43,965] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.AddressController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 348.4238ms.  
+[2020-10-26 15:29:43,974] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [14] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Address, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 15:29:43,983] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.AddressController.Get (AddressBookWebApi) in 378.9852ms  
+[2020-10-26 15:29:43,986] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 429.4322ms 200 application/json; charset=utf-8  
+[2020-10-26 15:31:10,171] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html    
+[2020-10-26 15:31:10,175] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 3.9788ms 200 text/html  
+[2020-10-26 15:31:10,419] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:31:10,421] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [20] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/favicon-32x32.png    
+[2020-10-26 15:31:10,426] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [20] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'  
+[2020-10-26 15:31:10,429] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [20] [HQNJ-DJAYARAMAN] [(null)] Request finished in 6.8461ms 200 image/png  
+[2020-10-26 15:31:10,435] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 16.1821ms 200 application/json;charset=utf-8  
+[2020-10-26 15:31:43,342] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 POST https://localhost:5001/api/Address application/json-patch+json 117  
+[2020-10-26 15:31:43,356] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Post", controller = "Address"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Post(AddressBookBusinessLib.Model.Address) on controller AddressBook.WebApi.Controllers.AddressController (AddressBookWebApi).  
+[2020-10-26 15:31:43,395] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.AddressController.Post (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 15:31:43,442] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.AddressController.Post (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 44.5421ms.  
+[2020-10-26 15:31:43,445] [INFO] [Microsoft.AspNetCore.Mvc.StatusCodeResult] [22] [HQNJ-DJAYARAMAN] [(null)] Executing HttpStatusCodeResult, setting HTTP status code 404  
+[2020-10-26 15:31:43,446] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.AddressController.Post (AddressBookWebApi) in 89.1633ms  
+[2020-10-26 15:31:43,448] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request finished in 107.0039ms 404   
+[2020-10-26 15:32:11,781] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 POST https://localhost:5001/api/Contact application/json-patch+json 110  
+[2020-10-26 15:32:11,785] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Post", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Post(AddressBookBusinessLib.Model.Contact) on controller AddressBook.WebApi.Controllers.ContactController (AddressBookWebApi).  
+[2020-10-26 15:32:11,797] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.ContactController.Post (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 15:32:11,886] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.ContactController.Post (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.OkResult in 86.2829ms.  
+[2020-10-26 15:32:11,887] [INFO] [Microsoft.AspNetCore.Mvc.StatusCodeResult] [22] [HQNJ-DJAYARAMAN] [(null)] Executing HttpStatusCodeResult, setting HTTP status code 200  
+[2020-10-26 15:32:11,888] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [22] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.ContactController.Post (AddressBookWebApi) in 102.069ms  
+[2020-10-26 15:32:11,890] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request finished in 110.3363ms 200   
+[2020-10-26 15:32:23,658] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [24] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/api/Contact    
+[2020-10-26 15:32:23,662] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [24] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.Contact]] Get() on controller AddressBook.WebApi.Controllers.ContactController (AddressBookWebApi).  
+[2020-10-26 15:32:23,665] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [24] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 15:32:23,699] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [24] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 31.4132ms.  
+[2020-10-26 15:32:23,702] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [24] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Contact, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 15:32:23,707] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [24] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) in 41.707ms  
+[2020-10-26 15:32:23,710] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [24] [HQNJ-DJAYARAMAN] [(null)] Request finished in 52.8976ms 200 application/json; charset=utf-8  
+[2020-10-26 15:34:06,527] [DEBUG] [HttpsConnectionAdapter] [7] [HQNJ-DJAYARAMAN] [(null)] Failed to authenticate HTTPS connection. System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslState.ThrowIfExceptional()
+   at System.Net.Security.SslState.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslState.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+ 
+[2020-10-26 15:34:06,527] [DEBUG] [HttpsConnectionAdapter] [8] [HQNJ-DJAYARAMAN] [(null)] Failed to authenticate HTTPS connection. System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslState.ThrowIfExceptional()
+   at System.Net.Security.SslState.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslState.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__51_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter.InnerOnConnectionAsync(ConnectionAdapterContext context)
+ 
+[2020-10-26 15:34:08,028] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger    
+[2020-10-26 15:34:08,345] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 339.5706ms 301   
+[2020-10-26 15:34:08,355] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html    
+[2020-10-26 15:34:08,464] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 110.0053ms 200 text/html  
+[2020-10-26 15:34:08,676] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:34:08,833] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 155.926ms 200 application/json;charset=utf-8  
+[2020-10-26 15:34:59,743] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:34:59,770] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [18] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 15:34:59,984] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request finished in 244.6571ms 404   
+[2020-10-26 15:35:00,093] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,095] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.7898ms 404   
+[2020-10-26 15:35:00,206] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,209] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.7715ms 404   
+[2020-10-26 15:35:00,311] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,314] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.5376ms 404   
+[2020-10-26 15:35:00,343] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,345] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 3.0831ms 404   
+[2020-10-26 15:35:00,451] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,453] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.3067ms 404   
+[2020-10-26 15:35:00,562] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,565] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.6278ms 404   
+[2020-10-26 15:35:00,680] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,689] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 4.0514ms 404   
+[2020-10-26 15:35:00,701] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger    
+[2020-10-26 15:35:00,706] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 4.4169ms 301   
+[2020-10-26 15:35:00,714] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 15:35:00,796] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,798] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 2.5227ms 404   
+[2020-10-26 15:35:00,805] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 89.5317ms 200 text/html  
+[2020-10-26 15:35:00,838] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css    
+[2020-10-26 15:35:00,842] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js    
+[2020-10-26 15:35:00,846] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js    
+[2020-10-26 15:35:00,905] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [20] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'  
+[2020-10-26 15:35:00,915] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/    
+[2020-10-26 15:35:00,923] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [22] [HQNJ-DJAYARAMAN] [(null)] Request finished in 10.7512ms 404   
+[2020-10-26 15:35:00,932] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [20] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'  
+[2020-10-26 15:35:00,942] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [20] [HQNJ-DJAYARAMAN] [(null)] Request finished in 90.5206ms 200 application/javascript  
+[2020-10-26 15:35:00,951] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 98.8372ms 200 text/css  
+[2020-10-26 15:35:00,998] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [6] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'  
+[2020-10-26 15:35:01,001] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 159.2849ms 200 application/javascript  
+[2020-10-26 15:35:01,166] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:35:01,201] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [9] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png    
+[2020-10-26 15:35:01,206] [INFO] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [9] [HQNJ-DJAYARAMAN] [(null)] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'  
+[2020-10-26 15:35:01,208] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [9] [HQNJ-DJAYARAMAN] [(null)] Request finished in 7.299ms 200 image/png  
+[2020-10-26 15:35:01,313] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 146.835ms 200 application/json;charset=utf-8  
+[2020-10-26 15:35:47,920] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/Contact    
+[2020-10-26 15:35:47,956] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [18] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.Contact]] Get() on controller AddressBook.WebApi.Controllers.ContactController (AddressBookWebApi).  
+[2020-10-26 15:35:47,965] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [18] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 15:35:48,378] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [18] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 408.2982ms.  
+[2020-10-26 15:35:48,387] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [18] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Contact, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 15:35:48,399] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [18] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) in 438.8142ms  
+[2020-10-26 15:35:48,401] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request finished in 482.4976ms 200 application/json; charset=utf-8  
+[2020-10-26 15:38:10,321] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 15:38:10,347] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 15:38:10,656] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 338.2886ms 200 text/html  
+[2020-10-26 15:38:10,938] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:38:11,068] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 130.7624ms 200 application/json;charset=utf-8  
+[2020-10-26 15:51:31,329] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 15:51:31,359] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [6] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 15:51:31,634] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 308.212ms 200 text/html  
+[2020-10-26 15:51:31,880] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 15:51:32,025] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 144.4875ms 200 application/json;charset=utf-8  
+[2020-10-26 18:49:10,474] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 18:49:10,512] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [14] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 18:49:11,026] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 557.3879ms 200 text/html  
+[2020-10-26 18:49:11,944] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 18:49:12,215] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 269.1307ms 200 application/json;charset=utf-8  
+[2020-10-26 18:49:19,120] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [16] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/DreeItem    
+[2020-10-26 18:49:19,184] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [16] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "DreeItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.Contact]] Get() on controller AddressBook.WebApi.Controllers.DreeItemController (AddressBookWebApi).  
+[2020-10-26 18:49:19,200] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [16] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 18:49:20,184] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [16] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 974.7518ms.  
+[2020-10-26 18:49:20,207] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [16] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Contact, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 18:49:20,228] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [16] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) in 1037.0097ms  
+[2020-10-26 18:49:20,233] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [16] [HQNJ-DJAYARAMAN] [(null)] Request finished in 1111.9103ms 200 application/json; charset=utf-8  
+[2020-10-26 19:16:55,273] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 19:16:55,320] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [7] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 19:16:55,741] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 472.1149ms 200 text/html  
+[2020-10-26 19:16:56,180] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 19:16:56,415] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 237.6847ms 200 application/json;charset=utf-8  
+[2020-10-26 19:23:37,470] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 19:23:37,510] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 19:23:38,142] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 678.4932ms 200 text/html  
+[2020-10-26 19:23:38,477] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 19:23:38,802] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [7] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types AddressBookDataLib.Model.DreeItem and AddressBookBusinessLib.Model.DreeItem. See config settings - "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreatePropertySchema(JsonProperty jsonProperty, Queue`1 referencedTypes)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponses(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 19:23:38,862] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 383.5295ms 500 text/html; charset=utf-8  
