@@ -318,3 +318,244 @@
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
  
 [2020-10-26 19:23:38,862] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 383.5295ms 500 text/html; charset=utf-8  
+[2020-10-26 20:32:11,037] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:32:11,062] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:32:11,394] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 361.8422ms 200 text/html  
+[2020-10-26 20:32:11,839] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:32:11,958] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 118.0991ms 200 application/json;charset=utf-8  
+[2020-10-26 20:34:11,097] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:34:11,120] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [13] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:34:11,353] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 260.878ms 200 text/html  
+[2020-10-26 20:34:11,538] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:34:11,830] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [13] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types AddressBookDataLib.Model.DreeItem and AddressBookBusinessLib.Model.DreeItem. See config settings - "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreatePropertySchema(JsonProperty jsonProperty, Queue`1 referencedTypes)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponses(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 20:34:11,859] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 322.1324ms 500 text/html; charset=utf-8  
+[2020-10-26 20:35:07,209] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:35:07,232] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [17] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:35:07,470] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 263.7045ms 200 text/html  
+[2020-10-26 20:35:07,653] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:35:07,776] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 123.2766ms 200 application/json;charset=utf-8  
+[2020-10-26 20:36:27,924] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:36:27,949] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [8] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:36:28,184] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 263.9769ms 200 text/html  
+[2020-10-26 20:36:28,381] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:36:28,502] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 120.7761ms 200 application/json;charset=utf-8  
+[2020-10-26 20:38:09,205] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:38:09,227] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [14] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:38:09,454] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 252.853ms 200 text/html  
+[2020-10-26 20:38:09,632] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:38:09,753] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 120.4922ms 200 application/json;charset=utf-8  
+[2020-10-26 20:40:40,403] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:40:40,426] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [13] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:40:40,645] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 245.6883ms 200 text/html  
+[2020-10-26 20:40:40,833] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:40:41,013] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [13] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types AddressBookDataLib.Model.DreeItem and AddressBookBusinessLib.Model.DreeItem. See config settings - "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreatePropertySchema(JsonProperty jsonProperty, Queue`1 referencedTypes)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponses(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 20:40:41,044] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 211.5108ms 500 text/html; charset=utf-8  
+[2020-10-26 20:43:00,383] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:43:00,406] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [17] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:43:00,637] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 256.2384ms 200 text/html  
+[2020-10-26 20:43:00,825] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:43:00,944] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [17] [HQNJ-DJAYARAMAN] [(null)] Request finished in 119.113ms 200 application/json;charset=utf-8  
+[2020-10-26 20:46:12,876] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:46:12,899] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:46:13,141] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 267.7886ms 200 text/html  
+[2020-10-26 20:46:13,323] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:46:13,513] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types AddressBookDataLib.Model.DreeItem and AddressBookBusinessLib.Model.DreeItem. See config settings - "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreatePropertySchema(JsonProperty jsonProperty, Queue`1 referencedTypes)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponses(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 20:46:13,544] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 222.0098ms 500 text/html; charset=utf-8  
+[2020-10-26 20:47:37,663] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:47:37,685] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [14] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:47:37,909] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 248.6697ms 200 text/html  
+[2020-10-26 20:47:38,087] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:47:38,225] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 137.5151ms 200 application/json;charset=utf-8  
+[2020-10-26 20:50:04,978] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:50:05,006] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [7] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:50:05,265] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 290.9411ms 200 text/html  
+[2020-10-26 20:50:05,506] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:50:05,715] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [7] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types AddressBookDataLib.Model.DreeItem and AddressBookBusinessLib.Model.DreeItem. See config settings - "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreatePropertySchema(JsonProperty jsonProperty, Queue`1 referencedTypes)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponses(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 20:50:05,747] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 241.2318ms 500 text/html; charset=utf-8  
+[2020-10-26 20:50:55,997] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:50:56,020] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [8] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:50:56,249] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 255.6204ms 200 text/html  
+[2020-10-26 20:50:56,447] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:50:56,582] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 135.5238ms 200 application/json;charset=utf-8  
+[2020-10-26 20:51:58,125] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:51:58,153] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [15] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:51:58,383] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 261.5037ms 200 text/html  
+[2020-10-26 20:51:58,569] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:51:58,691] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [15] [HQNJ-DJAYARAMAN] [(null)] Request finished in 122.3822ms 200 application/json;charset=utf-8  
+[2020-10-26 20:53:45,877] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [12] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:53:45,900] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [12] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:53:46,124] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [12] [HQNJ-DJAYARAMAN] [(null)] Request finished in 250.7926ms 200 text/html  
+[2020-10-26 20:53:46,306] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [12] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:53:46,422] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [12] [HQNJ-DJAYARAMAN] [(null)] Request finished in 115.8537ms 200 application/json;charset=utf-8  
+[2020-10-26 20:54:28,491] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 20:54:28,515] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [18] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 20:54:28,743] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request finished in 254.1889ms 200 text/html  
+[2020-10-26 20:54:28,913] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 20:54:29,034] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [18] [HQNJ-DJAYARAMAN] [(null)] Request finished in 120.8628ms 200 application/json;charset=utf-8  
+[2020-10-26 20:54:46,240] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [19] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/DreeItem    
+[2020-10-26 20:54:46,284] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [19] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "DreeItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.DreeItem]] Get() on controller AddressBook.WebApi.Controllers.DreeItemController (AddressBookWebApi).  
+[2020-10-26 20:54:46,396] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [19] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) in 106.4566ms  
+[2020-10-26 20:54:46,465] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [19] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'AddressBookBusinessLib.Interface.IDreeItemRepository' while attempting to activate 'AddressBook.WebApi.Controllers.DreeItemController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 20:54:46,530] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [19] [HQNJ-DJAYARAMAN] [(null)] Request finished in 291.4168ms 500 text/html; charset=utf-8  
+[2020-10-26 21:04:43,400] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 21:04:43,430] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [6] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 21:04:43,661] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [6] [HQNJ-DJAYARAMAN] [(null)] Request finished in 264.1492ms 200 text/html  
+[2020-10-26 21:04:43,848] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 21:04:43,976] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 127.9929ms 200 application/json;charset=utf-8  
+[2020-10-26 21:04:59,145] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/DreeItem    
+[2020-10-26 21:04:59,181] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [13] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "DreeItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.DreeItem]] Get() on controller AddressBook.WebApi.Controllers.DreeItemController (AddressBookWebApi).  
+[2020-10-26 21:04:59,191] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [13] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 21:04:59,902] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [13] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) in 717.1064ms  
+[2020-10-26 21:04:59,990] [ERROR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [13] [HQNJ-DJAYARAMAN] [(null)] An unhandled exception has occurred while executing the request. MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'addressbook.dreeitems' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at AddressBook.WebApi.Controllers.DreeItemController.Get() in C:\Users\djayaraman\Dhanan\AddressBookMySQLRepo\AddressBook.WebApi\Controllers\DreeItemController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+[2020-10-26 21:05:00,063] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [13] [HQNJ-DJAYARAMAN] [(null)] Request finished in 918.8267ms 500 text/html; charset=utf-8  
+[2020-10-26 21:06:11,749] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 21:06:11,772] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [7] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 21:06:12,004] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 257.4948ms 200 text/html  
+[2020-10-26 21:06:12,212] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 21:06:12,331] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [7] [HQNJ-DJAYARAMAN] [(null)] Request finished in 118.7459ms 200 application/json;charset=utf-8  
+[2020-10-26 21:10:22,219] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html    
+[2020-10-26 21:10:22,242] [WARN] [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] [8] [HQNJ-DJAYARAMAN] [(null)] Failed to determine the https port for redirect.  
+[2020-10-26 21:10:22,465] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 248.8363ms 200 text/html  
+[2020-10-26 21:10:22,644] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1.0.0/swagger.json    
+[2020-10-26 21:10:22,774] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [8] [HQNJ-DJAYARAMAN] [(null)] Request finished in 129.8664ms 200 application/json;charset=utf-8  
+[2020-10-26 21:10:29,967] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [20] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/Contact    
+[2020-10-26 21:10:30,002] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [20] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.Contact]] Get() on controller AddressBook.WebApi.Controllers.ContactController (AddressBookWebApi).  
+[2020-10-26 21:10:30,011] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [20] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 21:10:30,356] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [20] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 340.1982ms.  
+[2020-10-26 21:10:30,366] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [20] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.Contact, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 21:10:30,379] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [20] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.ContactController.Get (AddressBookWebApi) in 373.169ms  
+[2020-10-26 21:10:30,382] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [20] [HQNJ-DJAYARAMAN] [(null)] Request finished in 415.3965ms 200 application/json; charset=utf-8  
+[2020-10-26 21:11:16,619] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request starting HTTP/1.1 GET http://localhost:5000/api/DreeItem    
+[2020-10-26 21:11:16,623] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Route matched with {action = "Get", controller = "DreeItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AddressBookBusinessLib.Model.DreeItem]] Get() on controller AddressBook.WebApi.Controllers.DreeItemController (AddressBookWebApi).  
+[2020-10-26 21:11:16,627] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executing action method AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) - Validation state: Valid  
+[2020-10-26 21:11:16,712] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executed action method AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 82.4496ms.  
+[2020-10-26 21:11:16,714] [INFO] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [14] [HQNJ-DJAYARAMAN] [(null)] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressBookBusinessLib.Model.DreeItem, AddressBookBusinessLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.  
+[2020-10-26 21:11:16,716] [INFO] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [14] [HQNJ-DJAYARAMAN] [(null)] Executed action AddressBook.WebApi.Controllers.DreeItemController.Get (AddressBookWebApi) in 91.5455ms  
+[2020-10-26 21:11:16,718] [INFO] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [14] [HQNJ-DJAYARAMAN] [(null)] Request finished in 100.2996ms 200 application/json; charset=utf-8  

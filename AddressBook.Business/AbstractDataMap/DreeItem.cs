@@ -31,11 +31,11 @@ namespace AddressBookBusinessLib.DataMap
             }
         }
 
-        public DreeItem Branches
+        public dynamic Branches
         {
             get
             {
-                return (DreeItem)this.GetProperty("Branches");
+                return this.GetProperty("Branches");
             }
             set
             {

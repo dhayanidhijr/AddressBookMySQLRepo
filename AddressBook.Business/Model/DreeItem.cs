@@ -1,4 +1,5 @@
-﻿using DataModel = AddressBookDataLib.Model;
+﻿using System.Collections.Generic;
+using DataModel = AddressBookDataLib.Model;
 namespace AddressBookBusinessLib.Model
 {
     public class DreeItem : DataMap.DreeItem<DataModel.DreeItem>
@@ -25,5 +26,6 @@ namespace AddressBookBusinessLib.Model
             if (dreeItem == null) return null;
             return new DreeItem(dreeItem);
         }
+
     }
 }

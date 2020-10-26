@@ -58,6 +58,10 @@ namespace AddressBook.WebApi
 
             services.AddTransient<AddressBookBusinessLib.Interface.IContactRepository, AddressBookBusinessLib.Repository.ContactRepository>();
 
+            services.AddTransient<AddressBookDataLib.Interface.IDreeItemRepository, AddressBookDataLib.Repository.DreeItemRepository>();
+
+            services.AddTransient<AddressBookBusinessLib.Interface.IDreeItemRepository, AddressBookBusinessLib.Repository.DreeItemRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1.0.0", new Info { Title = "AddressBook", Version = "v1.0.0" });
