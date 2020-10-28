@@ -39,7 +39,9 @@ namespace AddressBookBusinessLib.DataMap
             }
             set
             {
-                this.SetProperty("Branches", value);
+                Newtonsoft.Json.Linq.JArray value2 = value;
+                var result = value2.ToObject<DreeItem[]>();
+                this.SetProperty("Branches", result);
             }
         }
     }

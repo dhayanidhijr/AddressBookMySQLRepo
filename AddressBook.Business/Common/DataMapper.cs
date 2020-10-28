@@ -24,7 +24,16 @@ namespace AddressBookBusinessLib.Common
 
         protected void SetProperty(object dataObject, string propertyName, object value)
         {
-            dataObject.GetType().GetProperty(propertyName).SetValue(dataObject, value);
+            try
+            {
+                dataObject.GetType().GetProperty(propertyName).SetValue(dataObject, value);
+            } 
+            catch (Exception ex)
+            {
+                string exception = ex.ToString();
+                throw ex;
+            }
+
         }
 
     }

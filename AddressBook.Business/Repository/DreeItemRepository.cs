@@ -40,10 +40,12 @@ namespace AddressBookBusinessLib.Repository
 
         public IEnumerable<DreeItem> ReadAll()
         {
-            return dreeItemRepository.ReadAll().Select((item) =>
+            var result = dreeItemRepository.ReadAll().Select((item) =>
             {
                 return (BusinessModel.DreeItem)item;
             });
+
+            return result;
         }
 
         public bool Update(DreeItem model)

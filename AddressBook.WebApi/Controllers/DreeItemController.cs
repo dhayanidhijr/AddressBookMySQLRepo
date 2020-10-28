@@ -34,7 +34,8 @@ namespace AddressBook.WebApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<BusinessModel.DreeItem>> Get()
         {
-            return dreeItemRepository.ReadAll().ToList();
+            var result = dreeItemRepository.ReadAll().ToList();
+            return result;
         }
 
         /// <summary>

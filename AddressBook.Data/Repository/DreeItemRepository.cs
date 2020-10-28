@@ -25,9 +25,8 @@ namespace AddressBookDataLib.Repository
 
         public bool Create(DreeItem model)
         {
-            model.Branches = null;
             addressBook.DreeItems.Add(model);
-            return addressBook.SaveChanges().Equals(1);
+            return (addressBook.SaveChanges() >= 0);
         }
 
         public bool Delete(int key)
